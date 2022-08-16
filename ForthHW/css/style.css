@@ -1,0 +1,368 @@
+body{
+	background-color: #F5F5F5;
+}
+header{
+	width: 100%;
+	height: 90px;
+	background-color: #202846;
+	display: flex;
+}
+.content{
+	margin: 8px 63px 7px 138px;
+}
+.HeaderLink{
+	width: 178.45px;
+	height: 70px;
+}
+.fourOfAll{
+	margin-top: -52px;
+	margin-left: 293px;
+	position: absolute;
+}
+.fourOfAll a{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	text-decoration: none;
+	color:white;
+}
+.fourOfAll a:hover{
+	text-decoration: underline;
+}
+.first-link{
+	margin-right: 54px;
+}
+.second-link{
+	margin-right: 54px;
+}
+.third-link{
+	margin-right: 54px;
+}
+.forth-link{
+	margin-right: 54px;
+}
+.endList{
+	width: 170px;
+	margin-top: -90px;
+	margin-left: 977px;
+	position: absolute;
+}
+.endList a{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	text-decoration: none;
+	color:white;
+	text-align: center;
+}
+.endList a:hover{
+	text-decoration: underline;
+}
+.TranslateBlock{
+	margin-left: 1211px;
+	margin-top: -50px;
+	display: flex;
+	position: absolute;
+}
+.TranslateBlock img{
+	margin-top: -25px;
+	max-width: 75px;
+}
+.TranslateBlock p{
+	margin: 0;
+	margin-left: 15px;
+	color:white;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+}
+/*End of header block*/
+.book {
+	width: 100%;
+	height: 140px;
+	background-color: #C6C6DC;
+}
+.book p{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 48px;
+	font-style: italic;
+	color: #202846;
+	margin: 0;
+	margin-left: 216px;
+	margin-right: 216px;
+	padding-top: 50px;
+}
+.place {
+	background-color: #E8E8E8;
+	height: 73px;
+	margin: 56px 216px 56px 216px;
+}
+.place p{
+	margin: 0;
+	padding-top: 18px;
+	text-align: center;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 28px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.6);
+}
+.place img{
+	width: 34px;
+	height: 33px;
+	position: absolute;
+	top: 306px;
+	left: 1250px;
+}
+/*First excursion*/
+.first-ex{
+	display: flex;
+	height: 300px;
+	background-color: #BDBDC6;
+	margin: 0;
+	margin-left: 216px;
+	margin-right: 216px;
+	margin-bottom: 36px;
+	transition: all 0.3s linear;
+}
+.first-ex:hover{
+	background-color: #AEAEE2;
+	box-shadow: 5px 5px 5px 10px #AEAEE2;
+}
+.first-ex img{
+	width: 380px;
+	height: 243px;
+	margin: 26px 73px 31px 53px;
+	transition: all 0.3s linear;
+}
+.first-ex:hover img{
+	width: 410px;
+	height: 273px;
+	margin: 16px 63px 21px 43px;
+}
+.text-block{
+	width: 512px;
+	height: 243px;
+	margin-top: 26px;
+}
+.text-block .header{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	font-style: italic;
+	margin: 0;
+}
+.hr{
+	background-color: #FFFFFF;
+	width: 512px;
+	height: 2px;
+}
+.text-block .text{
+	height: 133px;
+	background-color: #D7D7DD;
+	color: #202846;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	padding: 21px;
+}
+.star{
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 1025px;
+}
+.star path:hover{
+	fill: yellow;
+}
+.first-ex button{
+	width: 200px;
+	height: 60px;
+	background-color: #202846;
+	border: none;
+	border-radius: 30px;
+	position: absolute;
+	margin-top: 230px;
+	margin-left: 952px;
+	transition: all 0.3s linear;
+}
+.first-ex button a{
+	text-decoration: none;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.first-ex button:hover{
+	background-color: #EF075B;
+}
+/*second excursion*/
+.second-ex{
+	display: flex;
+	height: 300px;
+	background-color: #BDBDC6;
+	margin: 0;
+	margin-left: 216px;
+	margin-right: 216px;
+	margin-bottom: 36px;
+	transition: all 0.3s linear;
+}
+.second-ex:hover{
+	background-color: #AEAEE2;
+	box-shadow: 5px 5px 5px 10px #AEAEE2;
+}
+.second-ex img{
+	width: 380px;
+	height: 243px;
+	margin: 26px 73px 31px 53px;
+	transition: all 0.3s linear;
+}
+.second-ex:hover img{
+	width: 410px;
+	height: 273px;
+	margin: 16px 63px 21px 43px;
+}
+.second-ex button{
+	width: 200px;
+	height: 60px;
+	background-color: #202846;
+	border: none;
+	border-radius: 30px;
+	position: absolute;
+	margin-top: 230px;
+	margin-left: 952px;
+	transition: all 0.3s linear;
+}
+.second-ex button a{
+	text-decoration: none;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.second-ex button:hover{
+	background-color: #EF075B;
+}
+/*third excursion*/
+.third-ex{
+	display: flex;
+	height: 300px;
+	background-color: #BDBDC6;
+	margin: 0;
+	margin-left: 216px;
+	margin-right: 216px;
+	margin-bottom: 36px;
+	transition: all 0.3s linear;
+}
+.third-ex:hover{
+	background-color: #AEAEE2;
+	box-shadow: 5px 5px 5px 10px #AEAEE2;
+}
+.third-ex img{
+	width: 380px;
+	height: 243px;
+	margin: 26px 73px 31px 53px;
+	transition: all 0.3s linear;
+}
+.third-ex:hover img{
+	width: 410px;
+	height: 273px;
+	margin: 16px 63px 21px 43px;
+}
+.third-ex button{
+	width: 200px;
+	height: 60px;
+	background-color: #202846;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 30px;
+	position: absolute;
+	margin-top: 230px;
+	margin-left: 952px;
+	transition: all 0.3s linear;
+}
+.third-ex button a{
+	text-decoration: none;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.third-ex button:hover{
+	background-color: #EF075B;
+}
+/*forth excursion*/
+.forth-ex{
+	display: flex;
+	height: 300px;
+	background-color: #BDBDC6;
+	margin: 0;
+	margin-left: 216px;
+	margin-right: 216px;
+	margin-bottom: 36px;
+	transition: all 0.3s linear;
+}
+.forth-ex:hover{
+	background-color: #AEAEE2;
+	box-shadow: 5px 5px 5px 10px #AEAEE2;
+}
+.forth-ex img{
+	width: 380px;
+	height: 243px;
+	margin: 26px 73px 31px 53px;
+	transition: all 0.3s linear;
+}
+.forth-ex:hover img{
+	width: 410px;
+	height: 273px;
+	margin: 16px 63px 21px 43px;
+}
+.forth-ex button{
+	width: 200px;
+	height: 60px;
+	background-color: #202846;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 30px;
+	position: absolute;
+	margin-top: 230px;
+	margin-left: 952px;
+	transition: all 0.3s linear;
+}
+.forth-ex button a{
+	text-decoration: none;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.forth-ex button:hover{
+	background-color: #EF075B;
+}
+/*Top link*/
+.topLink{
+	position: fixed;
+}
+.circle{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.4);
+	margin-left: 1400px;
+	margin-top: 180px;
+	position: absolute;
+}
+.circle img{
+	width: 50px;
+	margin-left: 25px;
+	margin-top: 15px;
+}
+/*Footer*/
+footer{
+	width: 100%;
+	height: 90px;
+	background-color: #202846;
+}
+footer p{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 36px;
+	font-style: italic;
+	color: white;
+	margin-left: 116px;
+	padding-top: 21px;
+}
