@@ -4,51 +4,202 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">	<link rel="stylesheet" href="./css/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
-	<title>SportIfUSA</title>
+	<title>SportIf USA</title>
 </head>
 <body>
 	<header>
 		<a href="#"><img src="./img/SportIfUSA.png" alt="SportIfUSA"></a>
 		<nav>
-			<a href="#" class="SHORTS">SHORTS</a>
-			<a href="#" class="PANTS">PANTS</a>
-			<a href="#" class="SHIRTS">SHIRTS</a>
-			<a href="#" class="ACCESSORIES">ACCESSORIES</a>
-			<a href="#" class="SALE">SALE</a>
+			<a href="#">SHORTS</a>
+			<a href="#">PANTS</a>
+			<a href="#">SHIRTS</a>
+			<a href="#">ACCESSORIES</a>
+			<a href="#">SALE</a>
 		</nav>
+		<form>
+			<img src="./img/dandruff.svg" alt="dandruff" class="dandruff">
+			<input type="text" id="name" placeholder="SEARCH ENTIRE STORE HERE">
+		</form>
 	</header>
 	<!--End of header block-->
 	<main>
-		<div class="headerBlock">
-			<div class="textBlock">
+		<div class="header-block">
+			<div class="text-block">
 				<div class="title">BEST SELLING STRETCH SHORTS</div>
 				<div class="subtitle">Get the perfect fit with 6 different inseam lengths.</div>
-				<a href="#"><button>SHOP ALL SHORTS</button></a>
+				<button class="btn">SHOP ALL SHORTS</button>
 			</div>
-			<div class="photoBlock">
+			<div class="photo-block">
 				<img src="./img/mainIMG.png" alt="Man in white TS" class="CoolIMG">
 				<div class="border"></div>
-				<div class="BrownBlock"></div>
+				<div class="brown-block"></div>
 			</div>
 		</div>
 
-		<!--<div class="saleBlock">
-			<div class="offerBlock">
-				<p>TGIF, INLET, AND MARCHAL'S COLLECTIONS</p>
-				<p>NOW 40% OFF!</p>
+		<div class="sale-block">
+			<div class="offer-block">
+				<p class="smaller-sub">TGIF, INLET, AND MARCHAL'S COLLECTIONS</p>
+				<p class="bigger-sub">NOW 40% OFF!</p>
 			</div>
-			<div class="priceBlocks">
-				<img src="./img/firstShorts.png" alt="firstShorts">
-				<img src="./img/SecondShorts.png" alt="SecondShorts">
-				<img src="./img/ThirdJeans.png" alt="ThirdJeans">
-				<img src="./img/ForthJeans.png" alt="ForthJeans">
+			<div class="price-blocks">
+
+				<div class="first-shorts">
+					<img src="./img/Cargo.png" alt="Cargo Short" class="cargo">
+					<p class="description">Marchal's Original Cargo Short</p>
+					<img src="./img/FirStars.png" alt="stars" class="stars">
+					<p class="price">As low as <span>$40.99</span></p>
+					<img src="./img/cart.svg" alt="cart" class="cart">
+					<button>ADD TO CART</button>
+				</div>
+
+				<div class="second-shorts">
+					<img src="./img/Inlet.png" alt="Cargo Short" class="cargo">
+					<p class="description">Inlet Original Short</p>
+					<img src="./img/FirStars.png" alt="stars" class="stars">
+					<p class="price">As low as <span>$38.99</span></p>
+					<img src="./img/cart.svg" alt="cart" class="cart">
+					<button>ADD TO CART</button>
+				</div>
+
+				<div class="third-shorts">
+					<img src="./img/TGIF.png" alt="Cargo Short" class="cargo">
+					<p class="description">TGIF Pant</p>
+					<img src="./img/FirStars.png" alt="stars" class="stars">
+					<p class="price">As low as <span>$40.99</span></p>
+					<img src="./img/cart.svg" alt="cart" class="cart">
+					<button>ADD TO CART</button>
+				</div>
+
+				<div class="forth-shorts">
+					<img src="./img/Original.png" alt="Cargo Short" class="cargo">
+					<p class="description">Inlet Original Pant</p>
+					<img src="./img/FirStars.png" alt="stars" class="stars">
+					<p class="price">As low as <span>$52.99</span></p>
+					<img src="./img/cart.svg" alt="cart" class="cart">
+					<button>ADD TO CART</button>
+				</div>
 			</div>
-		</div>-->
+		</div>
+
+		<div class="best-pants">
+			<div class="pants-img">
+				<img src="./img/pants.png" alt="BestPants">
+			</div>
+			<div class="pants-des">
+				<div class="title">OUR BESTSELLING PANTS</div>
+				<div class="subtitle">Our classic cargo pants are built to last and designed to exceed your expectations! From Frequent Traveler to Hatteras to Trinidad, we have the perfect fit for you!</div>
+				<button class="btn">SHOP ALL PANTS</button>
+			</div>
+		</div>
+
+		<div class="two-men-block">
+			<div class="first-man">
+				<img src="./img/firstMan.png" alt="firstMan" class="img">
+				<div class="border"><p class="border-text">ECOTHS: NOW 30% OFF!</p></div>
+				<div class="anagraph">Our entire Ecoths collection is on sale! Plus, for every Ecoths purchase we donate 3 meals to food banks across the United States. We’re over 400,000 meals in now.</div>
+				<button class="man-btn">SHOP ECOTHS SALE</button>
+			</div>
+
+			<div class="second-man">
+				<img src="./img/secondMan.png" alt="secondMan" class="img">
+				<div class="border"><p class="border-text">NEW POWELL PRINT SHIRT</p></div>
+				<div class="anagraph">New from Old Ranch Brands, the Powell short sleeve print shirt! Look effortlessly sharp in this lightweight cotton shirt with a classic shape and convenient features.</div>
+				<button class="man-btn">SHOP POWEL SHORT SLEEVE</button>
+			</div>
+		</div>
+
+		<div class="bg-image">
+			<img src="./img/bgPhoto.png" alt="BackgroundImage">
+			<div class="text-content">
+				<div class="title">SPORTIF ORIGINAL PANT</div>
+				<div class="subtitle">Our classic nautical cargo pants are built to last and designed to exceed your expectations! Crafted from our stretch twill blend that offers the comfort of cotton, the wrinkle resistance of polyester and the mobility of Lycra®.</div>
+				<button>SHOP SPORTIF ORIGINAL PANT</button>
+			</div>
+		</div>
+
+		<div class="stay-in-trend">
+			<div class="trend-block">
+				<div class="head">STAY IN TREND WITH SPORTIF</div>
+				<div class="blocks">
+					<div class="belt">
+						<img src="./img/belt.png" alt="Belt">
+						<div>Don't Forget a Belt!</div>
+						<button>SHOP ALL BELTS</button>
+					</div>
+
+					<div class="trunks">
+						<img src="./img/trunks.png" alt="trunks">
+						<div>Swim Trunk Styles on Sale!</div>
+						<button>SHOP ALL SWIM TRUNKS</button>
+					</div>
+
+					<div class="catalog">
+						<img src="./img/catalog.png" alt="Catalog">
+						<div>Shop Newest Online Catalog</div>
+						<button>SHOP NEWEST CATALOG</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="family-bLock">
+			<img src="./img/fifyears.png" alt="Fifty years">
+			<div class="title">FAMILY OWNED LEGACY</div>
+			<div class="subtitle">We are proud to celebrate over 50 years of excellence as a family owned and operated business.</div>
+			<button class="btn">ABOUT US</button>
+		</div>
 	</main>
 	<!--End of main block-->
-	<footer></footer>
+	<footer>
+		<div class="brown-footer-block">
+			<ul>
+				<a href="#"><li class="head-li">ORDERING ONLINE</li></a>
+				<a href="#"><li>Account Login</li></a>
+				<a href="#"><li>Our Guarantee</li></a>
+				<a href="#"><li>Sportif Stretch Guide</li></a>
+				<a href="#"><li>Size Chart & Sizing Information</li></a>
+				<a href="#"><li>Hemming Information</li></a>
+				<a href="#"><li>Ordering & Payment</li></a>
+				<a href="#"><li>Shipping Information</li></a>
+				<a href="#"><li>Returns</li></a>
+			</ul>
+
+			<ul class="another-ul">
+				<a href="#"><li class="head-li">ABOUT SPORTIF</li></a>
+				<a href="#"><li>COVID-19 Response</li></a>
+				<a href="#"><li>History</li></a>
+				<a href="#"><li>Legacy</li></a>
+				<a href="#"><li>Good Sam Program</li></a>
+				<a href="#"><li>Privacy & Security</li></a>
+				<a href="#"><li>Terms & Conditions</li></a>
+				<a href="#"><li>Careers</li></a>
+			</ul>
+
+			<ul class="another-ul">
+				<a href="#"><li class="head-li">QUICK LINKS</li></a>
+				<a href="#"><li>FAQs</li></a>
+				<a href="#"><li>Shop Online Catalog</li></a>
+				<a href="#"><li>Contact Us</li></a>
+			</ul>
+
+			<ul class="another-ul">
+				<a href="#"><li class="head-li">GET TO KNOW US</li></a>
+				<a href="#"><li>Sign up for our weekly newsletter and get a 10% off coupon by email for your first order!</li></a>
+				<li>&nbsp;</li>
+				<li>Sign Up for Our Newsletter:</li>
+			</ul>
+			<img src="./img/EmailAddress.png" alt="EmailAddress">
+			<button>SUBSCRIBE</button>
+		</div>
+
+		<div class="white-footer-block">
+			<div>©2021 Sportif Mailorder. All Rights Reserved.</div>
+		</div>
+	</footer>
 	<!--End of footer block-->
 </body>
 </html>
