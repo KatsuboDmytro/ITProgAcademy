@@ -1,0 +1,327 @@
+body{
+	margin: 0;
+}
+/*First Block*/
+/*title*/
+.title{
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	font-size: 48px;
+	margin: 18px 0 55px 0;
+	line-height: 135%;
+}
+.title span{
+	color:#28CDE3;
+}
+/*imageBlock*/
+.image{
+	background-image: url("../img/usp-sobor.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
+	height: 852px;
+}
+.FlagOfUkraine{
+	height: 388px;
+	padding-top: 198px;
+}
+.FlagOfUkraine .bluePart{
+	background-color:#33B8F1;
+	position: absolute;
+	width: 24px;
+	height: 194px;
+	left: 83px;
+}
+.FlagOfUkraine .yellowPart{
+	background-color:#E8F82F;
+	position: absolute;
+	margin-top: 194px;
+	width: 24px;
+	height: 194px;
+	left: 83px;
+}
+.textOnImage{
+	margin-top: 33px;
+}
+.image .textOnImage p{
+	margin: 0;
+	text-align: left;
+	color: white;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 167%;
+	padding-left: 163px;
+}
+
+/*Second Block*/
+.FamousPlaces{
+	margin: 61px 80px 51px 76px;
+
+}
+.PlaceTitle{
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 167%;
+	margin: 0;
+}
+.HorizontalLine{
+	height: 5px;
+	width: 361px;
+	background-color:#33B8F1;
+	margin-bottom: 121px;
+}
+.Blocks{
+	height: 481px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+  justify-content: space-around;
+}
+.firstBlock{
+	width: 30%;
+	border-radius: 30px;
+	height: 100%;
+}
+.firstBlock:hover{
+	top: -10px;
+	left: -10px;
+	position: relative;
+	box-shadow: 10px 10px 10px #b1b1b1;
+}
+.firstBlock img{
+	width: 100%;
+}
+.firstBlock_header{
+	text-decoration: none;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	color:#030303;
+	line-height: 167%;
+	margin: 0;
+}
+.firstBlock .firstBlock_header:hover{
+	color:#33B8F1;
+}
+.firstBlock_text{
+	font-family: 'Inter', sans-serif;
+	font-weight: 100;
+	color: #595050;
+	font-size: 32px;
+	line-height: 167%;
+	margin: 0;
+	margin-top: -15px;
+}
+.secondBlock{
+	width: 30%;
+	border-radius: 30px;
+	height: 100%;
+}
+.secondBlock:hover{
+	top: -10px;
+	left: -10px;
+	position: relative;
+	box-shadow: 10px 10px 10px #b1b1b1;
+}
+.secondBlock img{
+	width: 100%;
+}
+.secondBlock_header{
+	text-decoration: none;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	font-size: 33px;
+	color:#030303;
+	line-height: 167%;
+	white-space: nowrap;
+	margin: 0;
+}
+.secondBlock .secondBlock_header:hover{
+	color:#33B8F1;
+}
+.secondBlock .secondBlock_text{
+	font-family: 'Inter', sans-serif;
+	font-weight: 100;
+	color: #595050;
+	font-size: 32px;
+	line-height: 167%;
+	margin: 0;
+	margin-top: 19px;
+}
+.thirdBlock{
+	width: 30%;
+	border-radius: 30px;
+	height: 100%;
+}
+.thirdBlock:hover{
+	top: -10px;
+	left: -10px;
+	position: relative;
+	box-shadow: 10px 10px 10px #b1b1b1;
+}
+.thirdBlock img{
+	width: 100%;
+}
+.thirdBlock_header{
+	text-decoration: none;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	font-size: 33px;
+	color:#030303;
+	line-height: 167%;
+	white-space: nowrap;
+	margin: 0;
+}
+.thirdBlock .thirdBlock_header:hover{
+	color:#33B8F1;
+}
+.thirdBlock .thirdBlock_text{
+	font-family: 'Inter', sans-serif;
+	font-weight: 100;
+	color: #595050;
+	font-size: 32px;
+	line-height: 167%;
+	padding-left: 12px;
+	margin: 0;
+	margin-top: 19px;
+}
+/*StandBlock*/
+.centralBlock{
+	text-align: center;
+}
+.StandTitle{
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 167%;
+	margin: 0;
+}
+.StandHorizontalLine{
+	height: 5px;
+	width: 361px;
+	background-color:#33B8F1;
+	margin-bottom: 121px;
+	display: inline-block;
+	vertical-align: center;
+	margin: 0;
+}
+.WeStandWithUkraine img{
+	width: 798px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 105px;
+}
+.WeStandWithUkraine a{
+	text-decoration: none;
+}
+.WeStandWithUkraine button{
+	display: block;
+	margin: 0 auto;
+	margin-top: 88px;
+	background-color:#33ADF1;
+	border:none;
+	width: 430px;
+	height: 74px;
+	font-family: 'Inter', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 167%;
+	color:white;
+}
+.WeStandWithUkraine button:hover{
+	background-color:#0f88c9;
+}
+
+footer{
+	margin-top: 182px;
+	background-color:#0A2DA9;
+	width: 100%;
+	height: 405px;
+}
+.CenterdFooter{
+	display: block;
+	margin: 0 auto;
+}
+.CenterdFooter .title{
+	margin-bottom: 40px;
+	font-size: 64px;
+	padding-top: 40px;
+}
+.title .white{
+	color:white;
+}
+.linksForSpeak{
+	text-align: center;
+}
+.FooterMail{
+	font-family: 'Inter', sans-serif;
+	color:#353949;
+	font-size: 32px;
+	line-height: 135%;
+	text-decoration: none;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+.FooterMail:hover{
+	text-decoration: underline;
+}
+.FooterTel{
+	font-family: 'Inter', sans-serif;
+	color:#353949;
+	font-size: 32px;
+	line-height: 135%;
+	text-decoration: none;
+}
+.FooterTel:hover{
+	text-decoration: underline;
+}
+.buttons{
+	margin: 10px auto;
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+}
+.buttons button{
+	background-color:#0931BF;
+	width: 68px;
+	height: 64px;
+	border-radius: 50%;
+	border: none;
+}
+.twitter{
+	margin-right: 55px;
+}
+.twitter button img{
+	width: 41px;
+	height: 37px;
+	display: block;
+	margin: 0 auto;
+}
+.telega{
+	margin-right: 55px;
+}
+.telega button img{
+	width: 52px;
+	height: 47px;
+	display: block;
+	margin: 0 auto;
+}
+.insta{
+	margin-right: 55px;
+}
+.insta button img{
+	width: 47px;
+	height: 48px;
+	display: block;
+	margin: 0 auto;
+}
+.facebook button img{
+	width: 45px;
+	height: 43px;
+	display: block;
+	margin: 0 auto;
+}
