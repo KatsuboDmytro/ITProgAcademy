@@ -1,76 +1,53 @@
 body{
 	background-color: #F5F5F5;
+	font-family: 'PT Sans', sans-serif;
 }
 header{
 	width: 100%;
 	height: 90px;
 	background-color: #202846;
-	display: flex;
 }
 .content{
-	margin: 8px 63px 7px 138px;
+	width: 95%;
+	padding-top: 10px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
 }
-.HeaderLink{
-	width: 178.45px;
+.header-link{
+	width: 180px;
 	height: 70px;
+	text-align: left;
 }
-.fourOfAll{
-	margin-top: -52px;
-	margin-left: 293px;
-	position: absolute;
+.all-links{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 120%;
 }
-.fourOfAll a{
-	font-family: 'PT Sans', sans-serif;
+.all-links a{
 	font-size: 24px;
 	text-decoration: none;
 	color:white;
 }
-.fourOfAll a:hover{
+.all-links a:hover{
 	text-decoration: underline;
 }
-.first-link{
-	margin-right: 54px;
-}
-.second-link{
-	margin-right: 54px;
-}
-.third-link{
-	margin-right: 54px;
-}
-.forth-link{
-	margin-right: 54px;
-}
-.endList{
+.ended-link{
 	width: 170px;
-	margin-top: -90px;
-	margin-left: 977px;
-	position: absolute;
-}
-.endList a{
-	font-family: 'PT Sans', sans-serif;
-	font-size: 24px;
-	text-decoration: none;
-	color:white;
 	text-align: center;
 }
-.endList a:hover{
-	text-decoration: underline;
-}
-.TranslateBlock{
-	margin-left: 1211px;
-	margin-top: -50px;
+.translate-block{
 	display: flex;
-	position: absolute;
+	align-items: center;
 }
-.TranslateBlock img{
-	margin-top: -25px;
+.translate-block img{
 	max-width: 75px;
 }
-.TranslateBlock p{
-	margin: 0;
+.translate-block div{
 	margin-left: 15px;
 	color:white;
-	font-family: 'PT Sans', sans-serif;
 	font-size: 24px;
 }
 /*End of header block*/
@@ -80,7 +57,6 @@ header{
 	background-color: #C6C6DC;
 }
 .book p{
-	font-family: 'PT Sans', sans-serif;
 	font-size: 48px;
 	font-style: italic;
 	color: #202846;
@@ -92,13 +68,14 @@ header{
 .place {
 	background-color: #E8E8E8;
 	height: 73px;
-	margin: 56px 216px 56px 216px;
+	width: 72%;
+	margin: 56px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.place p{
-	margin: 0;
-	padding-top: 18px;
+.place div{
 	text-align: center;
-	font-family: 'PT Sans', sans-serif;
 	font-size: 28px;
 	font-weight: 400;
 	color: rgba(0, 0, 0, 0.6);
@@ -106,32 +83,29 @@ header{
 .place img{
 	width: 34px;
 	height: 33px;
-	position: absolute;
-	top: 306px;
-	left: 1250px;
+	position:absolute;
+	margin-left: 500px;
 }
 /*First excursion*/
-.first-ex{
+.excursions{
 	display: flex;
 	height: 300px;
 	background-color: #BDBDC6;
-	margin: 0;
-	margin-left: 216px;
-	margin-right: 216px;
-	margin-bottom: 36px;
+	width: 72%;
+	margin: 36px auto;
 	transition: all 0.3s linear;
 }
-.first-ex:hover{
+.excursions:hover{
 	background-color: #AEAEE2;
 	box-shadow: 5px 5px 5px 10px #AEAEE2;
 }
-.first-ex img{
+.excursions img{
 	width: 380px;
 	height: 243px;
 	margin: 26px 73px 31px 53px;
 	transition: all 0.3s linear;
 }
-.first-ex:hover img{
+.excursions:hover img{
 	width: 410px;
 	height: 273px;
 	margin: 16px 63px 21px 43px;
@@ -142,7 +116,6 @@ header{
 	margin-top: 26px;
 }
 .text-block .header{
-	font-family: 'PT Sans', sans-serif;
 	font-size: 36px;
 	font-weight: bold;
 	font-style: italic;
@@ -157,7 +130,6 @@ header{
 	height: 133px;
 	background-color: #D7D7DD;
 	color: #202846;
-	font-family: 'PT Sans', sans-serif;
 	font-size: 20px;
 	text-align: center;
 	padding: 21px;
@@ -170,7 +142,7 @@ header{
 .star path:hover{
 	fill: yellow;
 }
-.first-ex button{
+.excursions button{
 	width: 200px;
 	height: 60px;
 	background-color: #202846;
@@ -181,157 +153,13 @@ header{
 	margin-left: 952px;
 	transition: all 0.3s linear;
 }
-.first-ex button a{
+.excursions button a{
 	text-decoration: none;
-	font-family: 'PT Sans', sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 	color: #FFFFFF;
 }
-.first-ex button:hover{
-	background-color: #EF075B;
-}
-/*second excursion*/
-.second-ex{
-	display: flex;
-	height: 300px;
-	background-color: #BDBDC6;
-	margin: 0;
-	margin-left: 216px;
-	margin-right: 216px;
-	margin-bottom: 36px;
-	transition: all 0.3s linear;
-}
-.second-ex:hover{
-	background-color: #AEAEE2;
-	box-shadow: 5px 5px 5px 10px #AEAEE2;
-}
-.second-ex img{
-	width: 380px;
-	height: 243px;
-	margin: 26px 73px 31px 53px;
-	transition: all 0.3s linear;
-}
-.second-ex:hover img{
-	width: 410px;
-	height: 273px;
-	margin: 16px 63px 21px 43px;
-}
-.second-ex button{
-	width: 200px;
-	height: 60px;
-	background-color: #202846;
-	border: none;
-	border-radius: 30px;
-	position: absolute;
-	margin-top: 230px;
-	margin-left: 952px;
-	transition: all 0.3s linear;
-}
-.second-ex button a{
-	text-decoration: none;
-	font-family: 'PT Sans', sans-serif;
-	font-size: 24px;
-	font-weight: 400;
-	color: #FFFFFF;
-}
-.second-ex button:hover{
-	background-color: #EF075B;
-}
-/*third excursion*/
-.third-ex{
-	display: flex;
-	height: 300px;
-	background-color: #BDBDC6;
-	margin: 0;
-	margin-left: 216px;
-	margin-right: 216px;
-	margin-bottom: 36px;
-	transition: all 0.3s linear;
-}
-.third-ex:hover{
-	background-color: #AEAEE2;
-	box-shadow: 5px 5px 5px 10px #AEAEE2;
-}
-.third-ex img{
-	width: 380px;
-	height: 243px;
-	margin: 26px 73px 31px 53px;
-	transition: all 0.3s linear;
-}
-.third-ex:hover img{
-	width: 410px;
-	height: 273px;
-	margin: 16px 63px 21px 43px;
-}
-.third-ex button{
-	width: 200px;
-	height: 60px;
-	background-color: #202846;
-	color: #FFFFFF;
-	border: none;
-	border-radius: 30px;
-	position: absolute;
-	margin-top: 230px;
-	margin-left: 952px;
-	transition: all 0.3s linear;
-}
-.third-ex button a{
-	text-decoration: none;
-	font-family: 'PT Sans', sans-serif;
-	font-size: 24px;
-	font-weight: 400;
-	color: #FFFFFF;
-}
-.third-ex button:hover{
-	background-color: #EF075B;
-}
-/*forth excursion*/
-.forth-ex{
-	display: flex;
-	height: 300px;
-	background-color: #BDBDC6;
-	margin: 0;
-	margin-left: 216px;
-	margin-right: 216px;
-	margin-bottom: 36px;
-	transition: all 0.3s linear;
-}
-.forth-ex:hover{
-	background-color: #AEAEE2;
-	box-shadow: 5px 5px 5px 10px #AEAEE2;
-}
-.forth-ex img{
-	width: 380px;
-	height: 243px;
-	margin: 26px 73px 31px 53px;
-	transition: all 0.3s linear;
-}
-.forth-ex:hover img{
-	width: 410px;
-	height: 273px;
-	margin: 16px 63px 21px 43px;
-}
-.forth-ex button{
-	width: 200px;
-	height: 60px;
-	background-color: #202846;
-	color: #FFFFFF;
-	border: none;
-	border-radius: 30px;
-	position: absolute;
-	margin-top: 230px;
-	margin-left: 952px;
-	transition: all 0.3s linear;
-}
-.forth-ex button a{
-	text-decoration: none;
-	font-family: 'PT Sans', sans-serif;
-	font-size: 24px;
-	font-weight: 400;
-	color: #FFFFFF;
-}
-.forth-ex button:hover{
+.excursions button:hover{
 	background-color: #EF075B;
 }
 /*Top link*/
@@ -359,7 +187,6 @@ footer{
 	background-color: #202846;
 }
 footer p{
-	font-family: 'PT Sans', sans-serif;
 	font-size: 36px;
 	font-style: italic;
 	color: white;
