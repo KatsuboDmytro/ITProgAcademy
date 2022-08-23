@@ -1,0 +1,195 @@
+body{
+	background-color: #F5F5F5;
+	font-family: 'PT Sans', sans-serif;
+}
+header{
+	width: 100%;
+	height: 90px;
+	background-color: #202846;
+}
+.content{
+	width: 95%;
+	padding-top: 10px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.header-link{
+	width: 180px;
+	height: 70px;
+	text-align: left;
+}
+.all-links{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 120%;
+}
+.all-links a{
+	font-size: 24px;
+	text-decoration: none;
+	color:white;
+}
+.all-links a:hover{
+	text-decoration: underline;
+}
+.ended-link{
+	width: 170px;
+	text-align: center;
+}
+.translate-block{
+	display: flex;
+	align-items: center;
+}
+.translate-block img{
+	max-width: 75px;
+}
+.translate-block div{
+	margin-left: 15px;
+	color:white;
+	font-size: 24px;
+}
+/*End of header block*/
+.book {
+	width: 100%;
+	height: 140px;
+	background-color: #C6C6DC;
+}
+.book p{
+	font-size: 48px;
+	font-style: italic;
+	color: #202846;
+	margin: 0;
+	margin-left: 216px;
+	margin-right: 216px;
+	padding-top: 50px;
+}
+.place {
+	background-color: #E8E8E8;
+	height: 73px;
+	width: 72%;
+	margin: 56px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.place div{
+	text-align: center;
+	font-size: 28px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.6);
+}
+.place img{
+	width: 34px;
+	height: 33px;
+	position:absolute;
+	margin-left: 500px;
+}
+/*First excursion*/
+.excursions{
+	display: flex;
+	height: 300px;
+	background-color: #BDBDC6;
+	width: 72%;
+	margin: 36px auto;
+	transition: all 0.3s linear;
+}
+.excursions:hover{
+	background-color: #AEAEE2;
+	box-shadow: 5px 5px 5px 10px #AEAEE2;
+}
+.excursions img{
+	width: 380px;
+	height: 243px;
+	margin: 26px 73px 31px 53px;
+	transition: all 0.3s linear;
+}
+.excursions:hover img{
+	width: 410px;
+	height: 273px;
+	margin: 16px 63px 21px 43px;
+}
+.text-block{
+	width: 512px;
+	height: 243px;
+	margin-top: 26px;
+}
+.text-block .header{
+	font-size: 36px;
+	font-weight: bold;
+	font-style: italic;
+	margin: 0;
+}
+.hr{
+	background-color: #FFFFFF;
+	width: 512px;
+	height: 2px;
+}
+.text-block .text{
+	height: 133px;
+	background-color: #D7D7DD;
+	color: #202846;
+	font-size: 20px;
+	text-align: center;
+	padding: 21px;
+}
+.star{
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 1025px;
+}
+.star path:hover{
+	fill: yellow;
+}
+.excursions button{
+	width: 200px;
+	height: 60px;
+	background-color: #202846;
+	border: none;
+	border-radius: 30px;
+	position: absolute;
+	margin-top: 230px;
+	margin-left: 952px;
+	transition: all 0.3s linear;
+}
+.excursions button a{
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.excursions button:hover{
+	background-color: #EF075B;
+}
+/*Top link*/
+.topLink{
+	position: fixed;
+}
+.circle{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.4);
+	margin-left: 1400px;
+	margin-top: 180px;
+	position: absolute;
+}
+.circle img{
+	width: 50px;
+	margin-left: 25px;
+	margin-top: 15px;
+}
+/*Footer*/
+footer{
+	width: 100%;
+	height: 90px;
+	background-color: #202846;
+}
+footer p{
+	font-size: 36px;
+	font-style: italic;
+	color: white;
+	margin-left: 116px;
+	padding-top: 21px;
+}
