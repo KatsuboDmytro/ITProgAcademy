@@ -11,20 +11,18 @@ body{
 	margin: 0;
 	padding: 0;
 }
+p{
+	margin: 0;
+}
 /*Header*/
 header{
 	height: 64px;
-	width: 100%;
+	width: 95%;
+	margin: 0 auto;
 	overflow: hidden;
-}
-header img{
-	float: left;
-	margin-right: 300px;
-}
-nav{
-	position: absolute;
-	margin-top: 20px;
-	margin-left: 510px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 nav a{
 	font-size: 2rem;
@@ -34,15 +32,6 @@ nav a{
 }
 nav a:hover{
 	text-decoration: underline;
-}
-svg{
-	position: absolute;
-	margin-top: 10px;
-	margin-left: 13px;
-}
-form{
-	margin-top: 10px;
-	margin-left: 1170px;
 }
 input{
 	width: 270px;
@@ -54,6 +43,9 @@ input{
 }
 .header-block{
 	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	width: 95%;
 	height: 645px;
 }
 /*Best selling block*/
@@ -62,7 +54,6 @@ input{
 	margin-top: 70px;
 	padding-left: 60px;
 	padding-top: 70px;
-	float: left;
 }
 .title{
 	color: #001F3D;
@@ -95,8 +86,7 @@ input{
 	color: white;
 }
 .photo-block{
-	margin-left: 700px;
-	width: 40%;
+	width: 60%;
 }
 .photo-block img{
 	margin-top: 30px;
@@ -111,9 +101,9 @@ input{
 	border: 1px solid var(--brown);
 	width: 340px;
 	height: 530px;
-	position: absolute;
-	left: 870px;
-	top: 170px;
+	margin-top: -505px;
+	margin-left: 215px;
+	position: relative;
 	z-index: 2;
 	transition: all .5s linear;
 }
@@ -121,26 +111,26 @@ input{
 	background-color: var(--brown);
 	width: 340px;
 	height: 530px;
-	position: absolute;
-	left: 1000px;
-	top: 80px;
+	margin-top: -595px;
+	margin-left: 290px;
+	position: relative;
 	z-index: 1;
 	transition: all .5s linear;
 }
 .photo-block:hover .border{
-	left: 1000px;
-	top: 80px;
+	margin-top: -575px;
+	margin-left: 285px;
 }
 .photo-block:hover .brown-block{
-	left: 870px;
-	top: 170px;
+	margin-top: -445px;
+	margin-left: 215px;
 }
 /*teleportation blok*/
 .teleportation{
 	position: fixed;
 	z-index: 3;
-	margin-top: -150px;
-	margin-left: 1390px;
+	margin-top: 500px;
+	margin-left: 1290px;
 }
 .teleportation a{
 	color: var(--brown);
@@ -199,163 +189,66 @@ input{
 	margin-top: 11px;
 	margin-left: 11px;
 }
-/*firstShorts*/
-.first-shorts{
-	width: 220px;
-	height: 356px;
+.shorts{
 	background-color: white;
-	text-align: center;
-	padding: 32px;
+	margin: 0 auto;
+	width: 280px;
+	height: 435px;
 }
 .cargo{
-	position: absolute;
-	left: 230px;
-	transition: all .3s linear;
+	margin: 15px 0 30px 80px;
+	height: 150px;
 }
-.first-shorts:hover .cargo{
-	width: 133px;
-	text-align: center;
+.pants{
+	margin: 15px 0 30px 110px;
+	height: 150px;
 }
 .description{
 	width: 170px;
 	font-weight: 500;
 	font-size: 2.4rem;
 	line-height: 36px;
-	padding: 5px;
+	text-align: center;
+	padding-bottom: 15px;
 	margin: 0 auto;
-	margin-top: 175px;
+}
+.inline{
+	margin-top: 18px;
+}
+.stars{
+	margin-left: 62px;
+	padding-bottom: 15px;
 }
 .price{
 	font-weight: 200;
 	font-size: 1.8rem;
 	line-height: 27px;
 	margin: 5px auto 15px;
+	text-align: center;
 }
 .price span{
 	font-weight: 700;
 	font-size: 1.8rem;
+	text-align: center;
 }
 .cart{
-	position: absolute;
-	margin: 0;
-	padding-left: 20px;
-	padding-top: 7px;
+	position: relative;
+	left: 63px;
+	top: 10px;
 }
-.first-shorts button{
+.shorts button{
 	width: 176px;
 	height: 35px;
-	padding-left: 20px;
-	padding-top: 6px;
 	background-color: var(--brown);
 	color: white;
 	border: none;
-	font-weight: 400;
 	font-size: 1.8rem;
+	margin-left: 23px;
 	transition: all .3s linear;
 }
-.first-shorts button:hover{
+.shorts button:hover{
 	background-color: var(--darkbrown);
 }
-/*secondShorts*/
-.second-shorts{
-	width: 220px;
-	height: 356px;
-	background-color: white;
-	text-align: center;
-	padding: 32px;
-}
-.second-shorts .cargo{
-	position: absolute;
-	left: 540px;
-	transition: all .3s linear;
-}
-.second-shorts:hover .cargo{
-	width: 133px;
-	text-align: center;
-}
-.second-shorts button{
-	width: 176px;
-	height: 35px;
-	padding-left: 20px;
-	padding-top: 6px;
-	background-color: var(--brown);
-	color: white;
-	border: none;
-	font-weight: 400;
-	font-size: 1.8rem;
-	transition: all .3s linear;
-}
-.second-shorts button:hover{
-	background-color: var(--darkbrown);
-}
-/*thirdShorts*/
-.third-shorts{
-	width: 220px;
-	height: 356px;
-	background-color: white;
-	text-align: center;
-	padding: 32px;
-}
-.third-shorts .description{
-	padding: 23px;
-}
-.third-shorts .cargo{
-	position: absolute;
-	left: 880px;
-	transition: all .3s linear;
-}
-.third-shorts:hover .cargo{
-	width: 67px;
-	text-align: center;
-}
-.third-shorts button{
-	width: 176px;
-	height: 35px;
-	padding-left: 20px;
-	padding-top: 6px;
-	background-color: var(--brown);
-	color: white;
-	border: none;
-	font-weight: 400;
-	font-size: 1.8rem;
-	transition: all .3s linear;
-}
-.third-shorts button:hover{
-	background-color: var(--darkbrown);
-}
-/*forthShorts*/
-.forth-shorts{
-	width: 220px;
-	height: 356px;
-	background-color: white;
-	text-align: center;
-	padding: 32px;
-}
-.forth-shorts .cargo{
-	position: absolute;
-	left: 1190px;
-	transition: all .3s linear;
-}
-.forth-shorts:hover .cargo{
-	width: 65px;
-	text-align: center;
-}
-.forth-shorts button{
-	width: 176px;
-	height: 35px;
-	padding-left: 20px;
-	padding-top: 6px;
-	background-color: var(--brown);
-	color: white;
-	border: none;
-	font-weight: 400;
-	font-size: 1.8rem;
-	transition: all .3s linear;
-}
-.forth-shorts button:hover{
-	background-color: var(--darkbrown);
-}
-
 /*BestPants*/
 .best-pants{
 	display: flex;
@@ -393,20 +286,21 @@ input{
 	padding-left: 17px;
 }
 .first-man .border, .second-man .border{
-	width: 100%;
+	width: 550px;
 	height: 86px;
 	background-color: var(--brown);
 	opacity: 0.8;
-	margin-top: -124px;
+	position: absolute;
+	margin-top: -88px;
 	transition: all .2s linear;
 }
 .first-man .img:hover + .border{
 	height: 200px;
-	margin-top: -237px;
+	margin-top: -200px;
 }
 .second-man .img:hover + .border{
 	height: 200px;
-	margin-top: -237px;
+	margin-top: -200px;
 }
 .border-text{
 	font-weight: 500;
