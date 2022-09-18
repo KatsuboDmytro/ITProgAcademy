@@ -4,263 +4,422 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<title>Forms</title>
+	<link rel="stylesheet" href="./css/media.css">
+	<title>OrnO</title>
+	<link rel="shortcut icon" href="./img/logo.png">
 </head>
-<body>
-	<div class="content">
-		<div class="head-text">Intake Main Flow</div>
-		<div class="warning"><span>*</span> Mandatory field</div>
+<body class="body">
+	<!--header-->
+	<header class="header_flex bg-white">
+		<div class="container">
+			<a href=""><img src="./img/logo.png" alt="logo"></a>
+			<img src="./img/geo.svg" alt="geo_icon">
+			<form action=""><input type="search" placeholder="Вкажіть Bаше місце..."></form>
 
-		<div class="title">Information</div>
+			<nav class="nav nav-pills nav-fill visible">
+				<a class="nav-link active first_nav disable" aria-current="page" href="#">Увійти</a>
+				<a class="nav-link active second_nav"aria-current="page" href="#">Кошик</a>
+			</nav>
+		</div>
+	</header>
+	<div class="horizontal_line"></div>
+	<!--end of header-->
 
-		<form autocomplete="on" action="" class="form-block">
-			<div class="left-part">
-				<p>
-					<label>Intake Type<span>* (select)</span></label><br>
-					<select id="type" required>
-						<option value="referal">Referral</option>
-						<option value="myself">Myself</option>
-					</select>
-				</p>
+	<!--main-->
+	<main>
+		<section class="restaurant bg-white">
+			<div class="container">Макдональдз</div>
+		</section>
 
-				<p>
-					<label>phone</label><br>
-					<input type="tel" maxlength="13" placeholder="+380">
-				</p>
-
-				<p>
-					<label>email</label><br>
-					<input type="mail" placeholder="email@mail.com">
-				</p>
-
-				<p>
-					<label>Application Registration (Optional)</label><br>
-					<select id="registration-number" class="forth-select">
-						<option value="APP">APP0000116</option>
-						<option value="APP">APP0000117</option>
-						<option value="APP">APP0000118</option>
-					</select>
-				</p>
-
-				<p>
-					<label>Additional Information Requested Date<span class="smaller-text">(Optional)</span></label><br>
-					<input type="date" required placeholder value="2021-13-05">
-				</p>
-
-				<p>
-					<label>Remaining Days Before Referral is Purged<span class="smaller-text">(Optional)</span></label><br>
-					<input type="number" required min="1" max="31" value="13">
-				</p>
-
-				<p>
-					<label>Fee Payment Date<span class="smaller-text">(Optional)</span></label><br>
-					<input type="date" required placeholder value="2021-13-05">
-				</p>
-
-				<p class="checkbox-p">
-					<input type="checkbox" class="checkbox" id="check">
-					<label for="check">Application Fee Processed</label>
-				</p> 
-
+		<section class="choose_nav container">
+			<div class="tortik">
+				<div></div>
+				<div></div>
+				<div></div>
 			</div>
+			<nav class="nav opacity mx-auto">
+				<a class="nav-link active hover_firs" aria-current="page" href="#">Популярне</a> 	<div class="grey_block"></div>
+				<a class="nav-link active hover_sec" aria-current="page" href="#burgers">Бургери</a> 	<div class="grey_block"></div>
+				<a class="nav-link active hover_thir" aria-current="page" href="#chicken">Курка</a> 	<div class="grey_block"></div>
+				<a class="nav-link active hover_fir" aria-current="page" href="#">Десерти</a> 	<div class="grey_block"></div>
+				<a class="nav-link active hover_fif" aria-current="page" href="#">Напої</a> 	<div class="grey_block"></div>
+				<a class="nav-link active hover_six" aria-current="page" href="#">Соуси</a> 	<div class="grey_block"></div>
+			</nav>
+		</section>
 
-			<div class="right-part">
-				<p>
-					<label>Enrollment Initiation Date jquery</label><br>
-					<input type="date" placeholder value="2021-11-05" class="dark-input">
-				</p>
+		<section class="pay">
+			<div class="pay_block">
+				<div class="text_part">
+					<div class="order">Ваше замовлення:</div>
+					<div class="first_part">
+						<div class="box">
+							<div class="main_position">Біг Мак меню</div>
+							<ul>
+								<li>Картопля фрі</li>
+								<li>Біг Мак</li>
+								<li>Кола</li>
+							</ul>
+						</div>
 
-				<p>
-					<label>Application Category<span>*</span></label><br>
-					<select id="category" required>
-						<option value="category">Child Support</option>
-					</select>
-				</p>
+						<div class="how_much">
+							<button>+</button>
+							<div>1</div>
+							<button>-</button>
+						</div>
+
+						<div class="price_part">120 ₴</div>
+					</div>
+
+					<div class="second_part">
+						<div class="main_position">Доставка</div>
+						<div class="price_part">50 ₴</div>
+					</div>
+				</div>
+
+				<a href="#">
+					<div class="flex_btn">
+						<div>Замовити</div>
+						<div>410 ₴</div>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<section class="sales burgers_container">
+			<header class="title">Акції</header>
+				<div class="cards row">
+					<div class="card col">
+						<img src="./img/bigTasty.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Тейсті</h5>
+							<p class="card-text">Сендвіч с великим, рубленим біфштексом</p>
+								<div class="card_flex">
+									<div class="price">80 грн.</div>
+									<a href="#" class="btn btn-primary">В корзину</a>
+									<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+									</svg>
+								</div>
+						</div>
+					</div>
+
+					<div class="card col">
+						<img src="./img/Rolls.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Ролли</h5>
+							<p class="card-text">Свіжі ролли, 3 штуки. Закручений зі смаком!</p>
+							<div class="card_flex">
+								<div class="price">110 грн.</div>
+								<a href="#" class="btn btn-primary">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					
+					<div class="card col">
+						<img src="./img/MacMenu.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Мак меню</h5>
+							<p class="card-text">Біг мак, середня картопля, кола</p>
+							<div class="card_flex">
+								<div class="price">150 грн.</div>
+								<a href="#" class="btn btn-primary menu">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="cards row">
+					<div class="card col">
+						<img src="./img/bigTasty.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Тейсті</h5>
+							<p class="card-text">Сендвіч с великим, рубленим біфштексом</p>
+								<div class="card_flex">
+									<div class="price">80 грн.</div>
+									<a href="#" class="btn btn-primary">В корзину</a>
+									<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+									</svg>
+								</div>
+						</div>
+					</div>
+
+					<div class="card col">
+						<img src="./img/Rolls.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Ролли</h5>
+							<p class="card-text">Свіжі ролли, 3 штуки. Закручений зі смаком!</p>
+							<div class="card_flex">
+								<div class="price">110 грн.</div>
+								<a href="#" class="btn btn-primary">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					
+					<div class="card col">
+						<img src="./img/MacMenu.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Мак меню</h5>
+							<p class="card-text">Біг мак, середня картопля, кола</p>
+							<div class="card_flex">
+								<div class="price">150 грн.</div>
+								<a href="#" class="btn btn-primary menu">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<header id="burgers" class="title">Бургери</header>
+				<div class="cards row">
+					<div class="card col">
+						<img src="./img/MacMenu.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Мак меню</h5>
+							<p class="card-text">Біг мак, середня картопля, кола</p>
+							<div class="card_flex">
+								<div class="price">150 грн.</div>
+								<a href="#" class="btn btn-primary menu">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col">
+						<img src="./img/bigTasty.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Тейсті</h5>
+							<p class="card-text">Сендвіч с великим, рубленим біфштексом</p>
+								<div class="card_flex">
+									<div class="price">80 грн.</div>
+									<a href="#" class="btn btn-primary">В корзину</a>
+									<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+									</svg>
+								</div>
+						</div>
+					</div>
+
+					<div class="card col">
+						<img src="./img/Rolls.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Ролли</h5>
+							<p class="card-text">Свіжі ролли, 3 штуки. Закручений зі смаком!</p>
+							<div class="card_flex">
+								<div class="price">110 грн.</div>
+								<a href="#" class="btn btn-primary">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
 				
-				<p class="big-padding">
-					<label>Enrollment Submission Date<span class="smaller-text">(Optional)</span></label><br>
-					<input type="date" required placeholder value="2021-13-05" class="dark-input">
-				</p>
+				<div class="cards row">
+					<div class="card col">
+						<img src="./img/Rolls.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Ролли</h5>
+							<p class="card-text">Свіжі ролли, 3 штуки. Закручений зі смаком!</p>
+							<div class="card_flex">
+								<div class="price">110 грн.</div>
+								<a href="#" class="btn btn-primary">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
 
-				<p class="checkbox-p">
-					<input type="checkbox" class="checkbox" id="check">
-					<label for="check">Purged</label>
-				</p>
+					<div class="card col">
+						<img src="./img/bigTasty.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Тейсті</h5>
+							<p class="card-text">Сендвіч с великим, рубленим біфштексом</p>
+								<div class="card_flex">
+									<div class="price">80 грн.</div>
+									<a href="#" class="btn btn-primary">В корзину</a>
+									<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+									</svg>
+								</div>
+						</div>
+					</div>
+					
+					<div class="card col">
+						<img src="./img/MacMenu.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Мак меню</h5>
+							<p class="card-text">Біг мак, середня картопля, кола</p>
+							<div class="card_flex">
+								<div class="price">150 грн.</div>
+								<a href="#" class="btn btn-primary menu">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
 
-				<p>
-					<label>Exempt from Paternity (Optional)   (select)</label><br>
-					<select id="exempt">
-						<option value="No">No</option>
-						<option value="Yes">Yes</option>
-					</select>
-				</p>
 
-				<p>
-					<label>Enrollment Status (Optional)</label><br>
-					<select id="status">
-						<option value="status">Worklisted</option>
-						<option value="status">Lorem, ipsum.</option>
-					</select>
-				</p>
+				<header id="chicken" class="title">Курка</header>
+				<div class="cards row">
+					<div class="card col">
+						<img src="./img/bigTasty.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Тейсті</h5>
+							<p class="card-text">Сендвіч с великим, рубленим біфштексом</p>
+								<div class="card_flex">
+									<div class="price">80 грн.</div>
+									<a href="#" class="btn btn-primary">В корзину</a>
+									<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+									</svg>
+								</div>
+						</div>
+					</div>
+
+					<div class="card col">
+						<img src="./img/Rolls.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Ролли</h5>
+							<p class="card-text">Свіжі ролли, 3 штуки. Закручений зі смаком!</p>
+							<div class="card_flex">
+								<div class="price">110 грн.</div>
+								<a href="#" class="btn btn-primary">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col">
+						<img src="./img/MacMenu.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Мак меню</h5>
+							<p class="card-text">Біг мак, середня картопля, кола</p>
+							<div class="card_flex">
+								<div class="price">150 грн.</div>
+								<a href="#" class="btn btn-primary menu">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				
+				<div class="cards row">
+					<div class="card col">
+						<img src="./img/bigTasty.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Тейсті</h5>
+							<p class="card-text">Сендвіч с великим, рубленим біфштексом</p>
+								<div class="card_flex">
+									<div class="price">80 грн.</div>
+									<a href="#" class="btn btn-primary">В корзину</a>
+									<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+									</svg>
+								</div>
+						</div>
+					</div>
+
+					<div class="card col">
+						<img src="./img/Rolls.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Ролли</h5>
+							<p class="card-text">Свіжі ролли, 3 штуки. Закручений зі смаком!</p>
+							<div class="card_flex">
+								<div class="price">110 грн.</div>
+								<a href="#" class="btn btn-primary">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="card col">
+						<img src="./img/MacMenu.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Біг Мак меню</h5>
+							<p class="card-text">Біг мак, середня картопля, кола</p>
+							<div class="card_flex">
+								<div class="price">150 грн.</div>
+								<a href="#" class="btn btn-primary menu">В корзину</a>
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.0118 18.6669C12.009 18.6686 12.0062 18.6702 12.0033 18.6719C11.9999 18.6699 11.9964 18.6678 11.993 18.6658C11.6741 18.4774 11.2161 18.1999 10.6654 17.8462C9.56206 17.1376 8.09621 16.1297 6.63532 14.9279C5.1695 13.722 3.73847 12.3451 2.68148 10.9034C1.61629 9.45043 1 8.02599 1 6.70412C1 3.6511 3.47496 1.1761 6.52802 1.1761V1.17613L6.53582 1.17607C8.40135 1.16152 10.1454 2.09983 11.1613 3.6646L11.9951 4.94902L12.8359 3.66908C13.8602 2.10949 15.6024 1.17199 17.4683 1.17609C20.5165 1.1916 22.9839 3.65853 23 6.7066C22.9992 8.05462 22.3805 9.49108 21.3177 10.945C20.2615 12.3899 18.8315 13.763 17.3666 14.9623C15.9065 16.1576 14.4414 17.1562 13.3386 17.8571C12.7882 18.207 12.3305 18.4811 12.0118 18.6669Z" stroke="black" stroke-width="2"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<header class="title">Про партнера</header>
+				<div class="white_block">
+					<div class="text">
+						<div class="grey_text">Робочі дні</div>
+						<div class="black_text">Пн, вт, ср, чт, пт, сб, вс</div>
+
+						<div class="grey_text">Час прийому замовлень</div>
+						<div class="black_text">З 09:00 до 23:00</div>
+
+						<div class="grey_text">Юридична інформація</div>
+						<div class="black_text">ПІІ "МАКДОНАЛЬДЗ ЮКРЕЙН ЛТД" ЄДРПОУ 23744453 </div>
+					</div>
+				</div>
+		</section>
+	</main>
+	<!--end of main-->
+
+	<!--footer-->
+	<footer>
+		<div class="container">
+			<div class="info">
+				<a href="#">Про нас</a>
+				<a href="#">Контакти</a>
+				<a href="#">Партнери</a>
 			</div>
-		</form>
 
-		<hr>
-
-		<div class="title">Maternity Information</div>
-		<form autocomplete="on" class="form-block">
-			<div class="left-part">
-				<p class="checkbox-p">
-					<input type="checkbox" class="checkbox" id="check">
-					<label for="check">Are you requesting child support services for an unborn child?</label>
-				</p>
+			<div class="photo">
+				<a href="#"><img src="./img/telegramm.png" alt="telegram"></a>
+				<a href="#"><img src="./img/facebook.png" alt="facebook"></a>
+				<a href="#"><img src="./img/instagramm.png" alt="instagram"></a>
 			</div>
-
-			<div class="right-part">
-				<p>
-					<label>Other known biological parent? (Optional)</label><br>
-					<select id="exempt">
-						<option value="None">None</option>
-						<option value="Yeap">Yeap</option>
-					</select>
-				</p>
-			</div>
-		</form>
-
-		<hr>
-
-		<div class="title">Official Use</div>
-		<form autocomplete="on" class="form-block">
-			<div class="left-part">
-				<p>
-					<label>Case Category (select)</label><br>
-					<select id="Category">
-						<option value="Active">Active IV-A</option>
-						<option value="Active">Active IV-B</option>
-					</select>
-				</p>
-
-				<p>
-					<label>Arrears Only Indicator (Optional)</label><br>
-					<select id="Indicator">
-						<option value="None" disabled selected>None</option>
-						<option value="Yeap">Yeap</option>
-					</select>
-				</p>
-
-				<p>
-					<label>Assigned County of Ownership (Optional)</label><br>
-					<select id="Ownership">
-						<option value="None" disabled selected>None</option>
-						<option value="Yeap">Yeap</option>
-					</select>
-				</p>
-
-				<p>
-					<label>Intergovermental Case Status (details)</label><br>
-					<select id="Intergovermental">
-						<option value="None" disabled selected>None</option>
-						<option value="Yeap">Yeap</option>
-					</select>
-				</p>
-
-				<p>
-					<label>Special Handling Indicator for Applicant (Optional)</label><br>
-					<select id="Handling">
-						<option value="None" disabled selected>None</option>
-						<option value="Yeap">Yeap</option>
-					</select>
-				</p>
-
-				<p>
-					<label>Special Handling Indicator for Other Parent (Optional)</label><br>
-					<select id="Parent">
-						<option value="None" disabled selected>None</option>
-						<option value="Yeap">Yeap</option>
-					</select>
-				</p>
-
-			</div>
-
-			<div class="right-part">
-				<p>
-					<label>IV-D Indicator<span>*</span></label><br>
-					<select id="Indicator" required>
-						<option value="Non">Non-IV-D</option>
-						<option value="Non">Non-IV-E</option>
-					</select>
-				</p>
-
-				<p>
-					<label>Intergovernmental Case Category (Optional)</label><br>
-					<select id="Intergovernmental">
-						<option value="None" disabled selected>None</option>
-						<option value="Yeap">Yeap</option>
-					</select>
-				</p>
-
-				<p>
-					<label>Intergovernmental Case Type (Optional)</label><br>
-					<select id="Intergovernmental">
-						<option value="None" disabled selected>None</option>
-						<option value="Yeap">Yeap</option>
-					</select>
-				</p>
-
-				<p class="searcher">
-					<label>Case Number</label><br>
-					<input type="search" placeholder="Search Case Number">
-				  <button><img src="./img/search.png" alt="search"></button>
-				</p>
-
-				<p>
-					<label>Referral Number</label><br>
-					<input type="search" placeholder="Search Referral Number">
-				  <button><img src="./img/search.png" alt="search"></button>
-				</p>
-
-			</div>
-		</form>
-
-		<hr>
-
-		<div class="title">System Information</div>
-		<form autocomplete="on" class="form-block">
-			<div class="left-part">
-				<p class="searcher">
-					<label>Enrollment Taken by User</label><br>
-					<input type="search" placeholder="Search Input">
-				  <button><img src="./img/search.png" alt="search"></button>
-				</p>
-
-				<p class="searcher">
-					<label>Worker (Optional)</label><br>
-					<input type="search" placeholder="Search Input">
-				  <button><img src="./img/search.png" alt="search"></button>
-				</p>
-			</div>
-
-			<div class="right-part">
-				<p class="searcher">
-					<label>Intake Supervisor (Optional)</label><br>
-					<input type="search" placeholder="Search">
-				  <button><img src="./img/search.png" alt="search"></button>
-				</p>
-
-				<p class="searcher">
-					<label>Owner (Optional)</label><br>
-					<input type="search" value="Rajaneesh Banal">
-				  <button><img src="./img/search.png" alt="search"></button>
-				</p>
-			</div>
-		</form>
-
-		<hr>
-
-		<div class="button"><input type="submit" value="Next"></div>
-		
-	</div>
+		</div>
+	</footer>
+	<!--end of footer-->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
