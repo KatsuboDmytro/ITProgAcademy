@@ -1,0 +1,151 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #E5E5E5;
+	color: #171717;
+	font-size: 10px;
+	line-height: 10px;
+	font-weight: 700;
+
+	--Public-Sans: 'Public Sans';
+	--red: #D83933;
+}
+p{
+	margin: 0;
+}
+.content{
+	width: 52%;
+	margin: 0 auto;
+	padding: 64px 45px 110px 43px;
+	font-family: var(--Public-Sans);
+}
+.head-text{
+	font-size: 2.4em;
+	line-height: 2.8em;
+	padding-bottom: 79px;
+}
+.warning{
+	font-weight: 400;
+	font-size: 1.4em;
+	line-height: 2em;
+	padding-bottom: 24px;
+}
+.warning span{
+	color: var(--red);
+}
+
+/*form-block*/
+.title{
+	font-size: 2em;
+	line-height: 2.4em;
+	padding-bottom: 32px;
+}
+form{
+	display: flex;
+	justify-content: space-between;
+}
+.left-part{
+	width: 50%;
+	padding-right: 32px;
+}
+.right-part{
+	width: 50%;
+}
+label{
+	font-weight: 500;
+	font-size: 1.6em;
+	line-height: 1.5em;
+}
+label span{
+	color: var(--red);
+}
+p{
+	padding-bottom: 20px;
+}
+p select{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ADADAD;
+	border-radius: 4px;
+
+	font-weight: 400;
+	font-size: 1.6em;
+	padding: 9px 10px;
+}
+p input{
+	width: 95.6%;
+	height: 40px;
+	border: 1px solid #ADADAD;
+	border-radius: 4px;
+
+	font-weight: 400;
+	font-size: 1.6em;
+	padding-left: 40px;
+}
+.forth-select{
+	color: #0050D8;
+}
+.smaller-text{
+	font-size: .9em;
+}
+.checkbox-p{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding-top: 27px;
+}
+.checkbox{
+	width: 24px;
+	margin-right: 8px;
+	accent-color: #FF00FF;
+}
+.checkbox-p label{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+}
+.big-padding{
+	padding-bottom: 105px;
+}
+
+.searcher{
+	height: 64px;
+}
+.searcher input{
+	color: #0050D8;
+}
+button img{
+	width: 24px;
+}
+button{
+	position: relative;
+	bottom: 36px;
+	left: 1%;
+	border: none;
+	background-color: #fff;
+}
+/*End of form-block*/
+.button{
+	display: flex;
+	justify-content: right;
+	width: 98%;
+	padding-top: 20px;
+	border-radius: 4px;
+}
+.button input:hover{
+	background-color: #0242af;
+}
+.button input{
+	position: inherit;
+	width: 69px;
+	height: 40px;
+	border: none;
+	background-color: #0050D8;
+	font-size: 1.6em;
+	line-height: 140%;
+	color: #FFFFFF;
+}
+.dark-input{
+	background: #EFEFEF;
+	border: 1px solid #ADADAD;
+}
