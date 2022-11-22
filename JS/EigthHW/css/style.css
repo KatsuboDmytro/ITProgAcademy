@@ -1,0 +1,8 @@
+#circle{
+  display: flex;
+	flex-wrap: wrap;
+}
+#circle div{
+	background-color: aquamarine;
+	border-radius: 50%;
+}
