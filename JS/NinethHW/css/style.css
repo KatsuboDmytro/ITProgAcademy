@@ -1,0 +1,51 @@
+.div{
+	border: 5px solid black;
+	text-align: center;
+	font-size: 50px;
+}
+#timer{
+	width: 350px;
+	height: 200px;
+	background-color: #000;
+	box-shadow: 0 0 10px black;
+	display: flex;
+	flex-direction: column;
+	margin: 150px;
+}
+#screen{
+	height: 120px;
+	width: 310px;
+	margin: 20px;
+	background: rgba(22, 97, 12, 0.5);
+	text-align: center;
+	vertical-align: middle;
+}
+#output{
+	font-size: 40px;
+}
+.buttons{
+	display: flex;
+	justify-content: space-around;
+}
+.buttons button{
+	font-size: 30px;
+	margin-bottom: 10px;
+	background-color: #000;
+	box-shadow: 0 0 15px rgb(125, 123, 123);/**/
+	border: none;
+	border-radius: 20px;
+	color: white;
+}
+.buttons button:hover{
+	box-shadow: none;
+}
+label{
+	margin: 150px;
+}
+#img{
+	height: 700px;
+	width: 800px;
+	margin: 0px 150px 0px 150px;
+	display: flex;
+	flex-wrap: wrap;
+}
