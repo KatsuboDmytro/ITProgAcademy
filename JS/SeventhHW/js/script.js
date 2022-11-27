@@ -29,11 +29,13 @@ class createNewUser{
 		return login.toLowerCase();
 	}
 	getAge(){
-		let age = this.birthday.slice(6);
-		return parseInt(age);
+		let birthYear = this.birthday.slice(6);
+		parseInt(birthYear);
+		let age = 2022 - birthYear;
+		return age;
 	}
 	getPassword(login,age){
-		let password = login.slice(0,1).toUpperCase() + login.slice(1) + age;
+		let password = login.slice(0,1).toUpperCase() + login.slice(1) + this.birthday.slice(6);
 		return password;
 	}
 }
