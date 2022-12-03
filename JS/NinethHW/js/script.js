@@ -15,45 +15,44 @@ document.body.prepend(div);
 * Реалізуйте Завдання використовуючи синтаксис ES6 та стрілочні функції
 */
 let start = document.getElementById('start'),stop = document.getElementById('stop'),reset = document.getElementById('reset'),
-		screen = document.getElementById('screen'), minutes = 1, seconds = 1, miliseconds = 1,
+		screen = document.getElementById('screen'), minutes = 1, seconds = 1, miliseconds = 1, iterM = 2, iterS = 2, iterMs = 2,
 		get = id => document.getElementById(id), counter = 0, intervalM, intervalS, intervalMs, flag = false;
 
 const countMinutes = () => {
 	get("minutes").innerHTML = minutes;
-	if(minutes >= 59) minutes = 0;
-	minutes++;
+	if(minutes >= 59) { minutes = 0; iterM = 0; }
+	if(minutes <= 8) minutes = '0' + iterM++;
+	else minutes++;
 }
 const countSeconds = () => {
 	get("seconds").innerHTML = seconds;
-	if(seconds >= 59) seconds = 0;
-	seconds++;
+	if(seconds >= 59) { seconds = 0; iterS = 0; }
+	if(seconds <= 8) seconds = '0' + iterS++;
+	else seconds++;
 }
 const countMiliseconds = () => {
 	get("miliseconds").innerHTML = miliseconds;
-	if(miliseconds >= 99) miliseconds = 0;
-	miliseconds++;
+	if(miliseconds >= 99) { miliseconds = 0; iterMs = 0; }
+	if(miliseconds <= 8) miliseconds = '0' + iterMs++;
+	else miliseconds++;
 }
 
-stop.onclick = () => {
+start.addEventListener('click', () => {
+	screen.style.background = `rgba(30, 255, 0, 0.5)`;
+	intervalM = setInterval(countMinutes, 60000);
+	intervalS = setInterval(countSeconds, 1000);
+	intervalMs = setInterval(countMiliseconds, 7); 
+})
+stop.addEventListener('click', () => {
 	screen.style.background = `rgba(255, 1, 1, 0.5)`;
 	clearInterval(intervalM);	clearInterval(intervalS);	clearInterval(intervalMs);
-	flag = false
-}
-start.onclick = () => {
-	screen.style.background = `rgba(30, 255, 0, 0.5)`;
-	if(!flag){
-		intervalM = setInterval(countMinutes, 60000);
-		intervalS = setInterval(countSeconds, 1000);
-		intervalMs = setInterval(countMiliseconds, 7); 
-		flag = true
-	}else alert("interval вже є!")
-}
-reset.onclick = () => {
+})
+reset.addEventListener('click', () => {
 	screen.style.background = `rgba(22, 97, 12, 0.5)`;
-	get("minutes").innerHTML = 0;			minutes = 1;
-	get("seconds").innerHTML = 0;			seconds = 1;
-	get("miliseconds").innerHTML = 0;	miliseconds = 1;
-}
+	get("minutes").innerHTML = '00';			minutes = 1;
+	get("seconds").innerHTML = '00';			seconds = 1;
+	get("miliseconds").innerHTML = '00';	miliseconds = 1;
+})
 /*
 Реалізуйте програму перевірки телефону
 * Використовуючи JS Створіть поле для введення телефону та кнопку збереження
@@ -106,19 +105,12 @@ var img = document.createElement("img");
 img.setAttribute('id', "img");
 var image = document.getElementById('img');
 var images = ['./img/firstMeme.png', './img/secondMeme.png', './img/thirddMeme.png'];
-var a = 0;
+var i = -1;
 
 function SetImage() {
-	if (a == 0) {
-		img.src = images[0];
-		a = 1;
-	} else if(a == 1){
-		img.src = images[1];
-		a = 2;
-	} else if(a == 2){
-		img.src = images[2];
-		a = 0;
-	}
+	i++;
+	if(i === images.length) i = 0;
+	img.src = images[i];
 }
 setInterval(SetImage, 3000);
 document.body.append(img);
