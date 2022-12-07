@@ -14,7 +14,7 @@ let get = id => document.getElementsByClassName(id);
 let firstValue = '', secondValue = '', sign = '', m = '', saveIn, finish = false, flag = false;
 const number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'],
 			action = ['-', '+', '*', '/'],
-			littleM = ['m-', 'm+'],
+			plusM = ['m+'], minusM = ['m-'],
 			memory = ['mrc'];
 			btn = document.querySelector(".keys"),
 			display = document.querySelector(".display p");
@@ -49,12 +49,17 @@ document.getElementById('keys').addEventListener('click', (event) => {
 		display.textContent = 'Error.';
 	}
 
-	if(littleM.includes(key)){
+	if(minusM.includes(key)){
+		saveIn = 0;
+		console.log('save: ' + saveIn);
+		document.getElementById('memory').textContent = '';
+	}
+	if(plusM.includes(key)){
 		saveIn = firstValue;
-		clear();
 		if(firstValue === '') saveIn = 0;
 		console.log('save: ' + saveIn);
 		document.getElementById('memory').textContent = 'm';
+		clear();
 	}
 	if(memory.includes(key)){
 		display.textContent = saveIn;
