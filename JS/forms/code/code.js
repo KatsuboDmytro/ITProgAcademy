@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 		})
 	})
 	/*========================================================================================*/
-	let [...form1] = document.forms[1], [...form2] = document.forms[2], [...form3] = document.forms[3], validName = /^[А-я 'єїґіІ-]/g, validTel = /^[+3800-9]{13}/, validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	let [...form1] = document.forms[1], [...form2] = document.forms[2], [...form3] = document.forms[3], validName = /^[А-я 'єїґіІ-]/g, validTel = /^[\+]?[(]?[380]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/, validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	form1.forEach((item)=>{
 		item.addEventListener('blur', ()=>{
 			if(validName.test(item.value))
