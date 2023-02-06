@@ -1,0 +1,147 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/*-------------------header--------------------*/
+	.dispaly{
+		display: none;
+	}
+	.list_text {
+		padding-right: 0px;
+	}
+	.navigation {
+		padding-left: 0px;
+	}
+	.header_input {
+		display: none;
+	}
+	.left_side {
+		width: 30%;
+	}
+	.left_side a img{
+		padding: 10px 0px;
+		width: 180px;
+	}
+	.right_side {
+		width: 70%;
+		justify-content: flex-end;
+	}
+	.list_text {
+		font-size: 2rem;
+	}
+	/*-------------------find--------------------*/
+	.find{
+		margin-top: 0px;
+	}
+	.find form{
+		width: 60%;
+	}
+	.pages{
+		padding: 15px 0px;
+	}
+	form{
+		padding-top: 0px;
+	}
+	#main_search{
+		height: 63px;
+
+	}
+	/*-------------------settings--------------------*/
+	.buy_shorts{
+		flex-direction: column;
+	}
+	.settings {
+		width: 96%;
+		padding: 25px 25px 0px;
+		margin-bottom: 20px;
+		margin-right: 0px;
+		display: flex;
+		justify-content: space-around;
+	}
+	.check_block{
+		flex-direction: column;
+	}
+	.block {
+		margin-bottom: 20px;
+	}
+	.size_grid {
+		grid-template-columns: repeat(3, 40px);
+	}
+	.line {
+		height: 137px;
+		width: 2px;
+		margin-bottom: 20px;
+	}
+	.line:last-child{
+		display: none;
+	}
+	.checkbox {
+		display: flex;
+		flex-direction: inherit;
+	}
+	.inseam_block{
+		width: 33%;
+	}
+	.fabrick_block{
+		width: 33%;
+	}
+	.minimum .block header{
+		padding: 0px 20px;
+	}
+	.pages{
+		width: 70%;
+	}
+	.size_grid{
+		grid-template-columns: repeat(3, 40px);
+	}
+	.flex{
+		display: flex;
+		justify-content: space-between;
+		padding: 1px;
+	}
+	.minimum{
+		display: block;
+		display: flex;
+		justify-content: space-around;
+	}
+	.maximum{
+		display: none;
+	}
+	/*-------------------shorts--------------------*/
+	.choose_shorts{
+		grid-template-columns: repeat(2, auto);
+		gap: 50px;
+		margin: 0 auto;
+		width: min-content;
+	}
+	
+	/*-------------------footer--------------------*/
+	.header_link, .know_us header {
+		font-size: 2rem;
+	}
+	.links ul li, .know_us p, form label {
+		font-size: 1.2rem;
+	}
+	.one_input {
+		height: 35px;
+		padding-left: 20px;
+		font-size: 1.2rem;
+	}
+	.subscribe {
+		right: 88px;
+		width: 114px;
+		font-size: 1.2rem;
+		height: 40px;
+		margin-top: 15px;
+	}
+	.reserved {
+		height: 10px;
+		font-size: 1rem;
+		padding-top: 0px;
+	}
+	.scroller {
+		height: 83px;
+		width: 83px;
+	}
+	.scroller a img {
+		padding: 15px 0px;
+		height: 55px;
+	}
+}

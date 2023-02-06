@@ -1,0 +1,250 @@
+@media screen and (max-width: 320px) {
+	.wrapper {
+        padding: 0px 25px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navigation {
+		position: fixed;
+        left: -200%;
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: white;
+	}
+    .navigation.active{
+        left: 0%;
+    }
+    .list_text{
+        margin: 5px 0px;
+    }
+    .list_text::after{
+        content: '';
+        display: block;
+        height: 2px;
+        width: 350px;
+        background-color: var(--subColor);
+        margin: 5px auto;
+    }
+    /*-------------------header--------------------*/
+	.dispaly{
+		display: none;
+	}
+	.list_text {
+		padding-right: 0px;
+	}
+	.header_input {
+		display: none;
+	}
+	.left_side {
+		width: 30%;
+	}
+    .left_side a img {
+        width: 200px;
+        padding: 10px 0px;
+    }
+	.right_side {
+		width: 70%;
+		justify-content: flex-end;
+	}
+	.list_text {
+		font-size: 2rem;
+	}
+	.list_text {
+		padding-right: 0px;
+	}
+	.header_input {
+		display: none;
+	}
+	.left_side {
+		width: 30%;
+	}
+	.left_side a img{
+        padding: 10px 0px;
+		width: 200px;
+	}
+	.right_side {
+		width: 70%;
+		justify-content: flex-end;
+	}
+	.list_text {
+		font-size: 2rem;
+	}
+	/*-------------------find--------------------*/
+    .pages{
+        flex-direction: column;
+    }
+    .information .indo {
+        font-size: 3.5rem;
+    }
+	/*-------------------information--------------------*/
+    .worry header {
+        font-size: 2rem;
+    }
+	.item {
+		flex-direction: column;
+	}
+	.photos{
+		width: 100%;
+		text-align: center;
+	}
+    .original_front{
+        margin: 0;
+        padding: 11px 3px 16px 4px;
+    }
+    .original_back{
+        padding: 28px 4px;
+        margin: 0;
+    }
+    .big_original_short {
+        width: 100%;
+        height: 281px;
+    }
+	.small_photos {
+		height: 140px;
+		padding: 0px;
+        display: flex;
+        justify-content: space-between;
+	}
+	.information {
+		padding-top: 30px;
+	}
+    .indo {
+        display: flex;
+        flex-direction: column;
+    }
+	.feedback {
+		padding: 20px 0px;
+	}
+	.size_grid {
+		grid-template-columns: repeat(3, 46px);
+		padding: 18px 0px;
+	}
+	.returns {
+		margin-left: 0px;
+	}
+	.add_bag{
+		font-size: 2rem;
+		padding-bottom: 5px;
+	}
+	.add_list svg {
+		top: 8px;
+	}
+	.add_list{
+		padding-bottom: 10px;
+		font-size: 2rem;
+        width: 100%;
+        margin: 0;
+	}
+	.add_bag{
+		font-size: 2rem;
+		padding-bottom: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+	}
+    .flex_box {
+        padding: 13.09px 15px 26.19px 15px;
+    }
+	.shipping, .returns {
+		width: 100%;
+        justify-content: center;
+	}
+    .line {
+        width: 135px;
+    }
+    .buttons{
+        flex-direction: column;
+        height: min-content;
+    }
+    .flex_box{
+        flex-direction: column;
+    }
+    .media {
+        margin: 0 auto;
+    }
+    .social_media{
+        justify-content: center;
+    }
+	/*-------------------details--------------------*/
+	.text{
+		margin: 0 auto;
+		margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1.5rem;
+	}
+	.details header {
+		padding: 35px 0px;
+        font-size: 3rem;
+    }
+    
+	/*-------------------footer--------------------*/
+    .footer{
+        padding: 20px;
+    }
+    .wrapp_links {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+	.header_link, .know_us div {
+		font-size: 1.3rem;
+	}
+    .links {
+        width: 50%;
+        margin-right: 5px;
+    }
+    .header_link, .know_us div {
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+	.links ul li, .know_us p, form label {
+		font-size: 1rem;
+	}
+    .info{
+        display: none;
+    }
+	.one_input {
+		height: 40px;
+		padding-left: 10px;
+		font-size: 1.2rem;
+	}
+    form div {
+        flex-direction: column;
+    }
+	.subscribe {
+		right: 0px;
+		width: 80px;
+		font-size: 1.2rem;
+		height: 40px;
+	}
+	.one_input {
+        margin-top: 0px;
+        width: 100%;
+    }
+	.reserved {
+		height: 10px;
+		font-size: 1rem;
+		padding-top: 0px;
+	}
+    .scroller {
+        height: 53px;
+        width: 53px;
+        left: 75%;
+    }
+    .scroller a img {
+        padding: 11px 0px;
+        height: 25px;
+    }
+}

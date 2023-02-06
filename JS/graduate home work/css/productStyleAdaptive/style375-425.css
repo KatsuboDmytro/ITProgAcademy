@@ -1,0 +1,237 @@
+@media screen and (min-width: 375px) and (max-width: 425px) {
+	.wrapper {
+        padding: 0px 25px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .header_input{
+		justify-content: flex-start;
+		margin-top: 9px;
+	}
+	.navigation{
+		margin-top: 16px;
+	}
+	.header_input img {
+		width: 17px;
+		height: 22px;
+		padding: 12px 0px;
+		left: 31px;
+	}
+    .navigation {
+		position: fixed;
+        left: -200%;
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: white;
+	}
+    .navigation.active{
+        left: 0%;
+    }
+    .list_text{
+        margin: 5px 0px;
+    }
+    .list_text::after{
+        content: '';
+        display: block;
+        height: 2px;
+        width: 350px;
+        background-color: var(--subColor);
+        margin: 5px auto;
+    }
+    /*-------------------header--------------------*/
+	.header_input{
+		justify-content: flex-start;
+		margin-top: 9px;
+	}
+	.navigation{
+		margin-top: 16px;
+	}
+	.header_input img {
+		width: 17px;
+		height: 22px;
+		padding: 12px 0px;
+		left: 31px;
+	}
+	.dispaly{
+		display: none;
+	}
+	.list_text {
+		padding-right: 0px;
+	}
+	.header_input {
+		display: none;
+	}
+	.left_side {
+		width: 30%;
+	}
+	.left_side a img{
+        padding: 10px 0px;
+		width: 200px;
+	}
+	.right_side {
+		width: 70%;
+		justify-content: flex-end;
+	}
+	.list_text {
+		font-size: 2rem;
+	}
+	/*-------------------find--------------------*/
+    .pages{
+        flex-direction: column;
+    }
+    .big_original_short {
+        width: 100%;
+    }
+    .information .indo {
+        font-size: 3.5rem;
+    }
+	/*-------------------information--------------------*/
+	.item {
+		flex-direction: column;
+	}
+	.photos{
+		width: 100%;
+		text-align: center;
+	}
+	.big_original_short{
+		height: 550px;
+	}
+	.small_photos {
+		height: 140px;
+		padding: 0px;
+	}
+	.information {
+		padding-top: 30px;
+	}
+    .indo {
+        display: flex;
+        flex-direction: column;
+    }
+	.feedback {
+		padding: 20px 0px;
+	}
+	.size_grid {
+		grid-template-columns: repeat(5, 46px);
+		padding: 18px 0px;
+	}
+	.returns {
+		margin-left: 0px;
+	}
+	.add_bag{
+		font-size: 2rem;
+		padding-bottom: 5px;
+	}
+	.add_list svg {
+		top: 8px;
+	}
+	.add_list{
+		padding-bottom: 10px;
+		font-size: 2rem;
+        width: 100%;
+        margin: 0;
+	}
+	.add_bag{
+		font-size: 2rem;
+		padding-bottom: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+	}
+	.flex_box {
+		padding: 13.09px 35px 26.19px 35px;
+	}
+	.shipping, .returns {
+		width: 100%;
+        justify-content: center;
+	}
+    .line{
+        width: 225px;
+    }
+    .buttons{
+        flex-direction: column;
+        height: min-content;
+    }
+    .flex_box{
+        flex-direction: column;
+    }
+	/*-------------------details--------------------*/
+	.text{
+		margin: 0 auto;
+		margin-bottom: 20px;
+		padding: 40px;
+	}
+	.details header {
+		padding: 35px 0px;
+	}
+
+    /*-------------------footer--------------------*/
+    .footer{
+        padding: 20px;
+    }
+    .wrapp_links {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+	.header_link, .know_us div {
+		font-size: 1.3rem;
+	}
+    .links {
+        width: 50%;
+        margin-right: 5px;
+    }
+    .header_link, .know_us div {
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+	.links ul li, .know_us p, form label {
+		font-size: 1rem;
+	}
+    .info{
+        display: none;
+    }
+	.one_input {
+		height: 40px;
+		padding-left: 10px;
+		font-size: 1.2rem;
+	}
+    form div {
+        flex-direction: column;
+    }
+	.subscribe {
+		right: 0px;
+		width: 80px;
+		font-size: 1.2rem;
+		height: 40px;
+	}
+	.one_input {
+        margin-top: 0px;
+        width: 100%;
+    }
+	.reserved {
+		height: 10px;
+		font-size: 1rem;
+		padding-top: 0px;
+	}
+    .scroller {
+        height: 63px;
+        width: 63px;
+        left: 80%;
+    }
+    .scroller a img {
+        padding: 15px 0px;
+        height: 30px;
+    }
+}
