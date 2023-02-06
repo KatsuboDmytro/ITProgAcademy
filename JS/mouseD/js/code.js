@@ -4,10 +4,13 @@ var userInfo = [{
 	surname: '',
 }]
 class createUser{
+	constructor(){
+		this.name = prompt('Enter your name');
+		this.surname = prompt('Enter your surname');
+	}
 	enterInfo(){
-		let name = `prompt('Enter your name')`, surname = `prompt('Enter your surname')`;
-		userInfo.name = name; userInfo.surname = surname;
-		this.show(name,surname);
+		userInfo.name = this.name; userInfo.surname = this.surname;
+		this.show(this.name,this.surname);
 	}
 	show(name, surname){
 		let firstDiv = document.createElement('div');
@@ -21,6 +24,7 @@ user.enterInfo();
 console.log(userInfo);
 
 document.getElementById('create').addEventListener('click', ()=>{
+	const user = new createUser();
 	user.enterInfo();
 	console.log(userInfo);
 })

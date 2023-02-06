@@ -1,0 +1,136 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/*-------------------header--------------------*/
+	.header_input{
+		justify-content: flex-start;
+		margin-top: 9px;
+	}
+	.navigation{
+		margin-top: 16px;
+	}
+	.header_input img {
+		width: 17px;
+		height: 22px;
+		padding: 12px 0px;
+		left: 31px;
+	}
+	.dispaly{
+		display: none;
+	}
+	.list_text {
+		padding-right: 0px;
+	}
+	.navigation {
+		padding-left: 0px;
+	}
+	.header_input {
+		display: none;
+	}
+	.left_side {
+		width: 30%;
+	}
+	.left_side a img{
+		padding: 10px 0px;
+		width: 180px;
+	}
+	.right_side {
+		width: 70%;
+		justify-content: flex-end;
+	}
+	.list_text {
+		font-size: 2rem;
+	}
+	/*-------------------information--------------------*/
+	.item {
+		flex-direction: column;
+	}
+	.photos{
+		width: 100%;
+		text-align: center;
+	}
+	.big_original_short{
+		height: 550px;
+	}
+	.small_photos {
+		height: 140px;
+		padding: 0px;
+	}
+	.information {
+		padding-top: 30px;
+	}
+	.indo{
+		display: block;
+	}
+	.feedback {
+		padding: 20px 0px;
+	}
+	.size_grid {
+		grid-template-columns: repeat(9, 46px);
+		padding: 18px 0px;
+	}
+	.returns {
+		margin-left: 50px;
+	}
+	.add_bag{
+		font-size: 2rem;
+		padding-bottom: 5px;
+	}
+	.add_list svg {
+		top: 8px;
+	}
+	.add_list{
+		padding-bottom: 10px;
+		font-size: 2rem;
+	}
+	.add_bag{
+		font-size: 2rem;
+		padding-bottom: 5px;
+	}
+	.flex_box {
+		padding: 13.09px 35px 26.19px 35px;
+	}
+	.shipping, .returns {
+		width: 50%;
+	}
+	/*-------------------details--------------------*/
+	.text{
+		margin: 0 auto;
+		margin-bottom: 20px;
+		padding: 45px 88px 40px 90px;
+	}
+	.details header {
+		padding: 35px 0px;
+	}
+	/*-------------------footer--------------------*/
+	.header_link, .know_us div {
+		font-size: 2rem;
+	}
+	.links ul li, .know_us p, form label {
+		font-size: 1.2rem;
+	}
+	.one_input {
+		height: 35px;
+		padding-left: 20px;
+		font-size: 1.2rem;
+	}
+	.subscribe {
+		right: 88px;
+		width: 114px;
+		font-size: 1.2rem;
+		height: 40px;
+		margin-top: 15px;
+	}
+	.reserved {
+		height: 10px;
+		font-size: 1rem;
+		padding-top: 0px;
+	}
+	.scroller {
+		height: 83px;
+		width: 83px;
+		left: 90%;
+	}
+	.scroller a img {
+		padding: 19px 0px;
+		height: 40px;
+	}
+}
